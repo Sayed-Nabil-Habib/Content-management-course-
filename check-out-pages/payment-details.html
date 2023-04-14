@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SweetHeart-1 h 03 min High quality price 19.9$, watch for free">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Hotjar Tracking Code for my site -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3398365,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+  <script src="https://kit.fontawesome.com/b6118d1115.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../Style/payment-details.css">
+  <link rel="stylesheet" href="../../Style/navigation.css">
+  
+  <title>Squares-Eyes-payment-details</title>
+</head>
+<body>
+  
+  <!--Header strt here-->
+  <header>
+    <div class="navigation">
+    <div class="mobile-logo">
+      <a class="logo-orginal" href="../../index.html"><img src="../../materials/SquareEyes_Logo.png" alt="square-eyes-logo"></a>
+      <a class="logo-white" href="../../index.html"><img src="../../materials/SquareEyes_Logo_white.png" alt="square-eyes-logo"></a>
+    </div>
+   
+    <nav>
+      <ul class="menu">
+        
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="active" href="../films/films.html">Films/Series</a></li>
+
+           <li><a class="drop-down" href="#films">More<i class="fa-solid fa-caret-down"></i></a>
+        
+        <ul class="submenu">
+          <li><a href="../about/contact/about.html">About</a></li>
+          <li><a href="../about/contact/contact.html">Contact</a></li>
+          
+        </ul>
+       </li>
+      
+       
+    </ul>
+    </nav>
+  </div>
+  </header>
+
+  <!--Main strt here-->
+  <div class="main">
+    <div class="container"> 
+      <p class="basket">Basket Summary</p>
+      <p class="title">Sweetheart</p>
+      <p class="duration">2022 - 1h 03min</p>
+      <p class="quality">HD quality</p>
+      <p class="price">Price 19.99$</p>
+    </div>
+  </div>
+
+  <!--vipps and visa logos and title-->
+  <div class="pyament-header">
+        <p>Payment methods</p>
+      <div class="payment-logo">
+        <img class="vipss-logo" src="../materials/vipps-rgb-orange-neg.png" alt="vipss-logo">
+        <img class="visa-logo" src="../materials/Visa-Logo-2006.png" alt="visa-logo">
+      </div>
+  </div>
+
+  <!--payment details--> 
+  <main class="main-container">
+  <div id="successMessage" class="success">You order has been successfully sent!</div>
+    <form id="payment-form" >
+     <div class="payment-main">
+      <div class="payment-container">
+
+        <div>
+      <label for="payment-method">Select a paytment method</label>
+      <select id="payment-method" name="payment-method">
+        <option value="visa">Visa</option>
+        <option value="vipps">Vipss</option>
+       
+      </select>
+      <div class="form-error" id="nameError">Please Select payment methode
+      </div>
+    </div>
+
+      <div>
+        <label for="card-number">Card Number</label>
+        <input name="cardNumber" type="number" id="card-number"placeholder="Card number">
+        <div class="form-error" id="cardError">Please enter card number
+        </div>
+      </div>
+
+      <div>
+        <label for="name-on-card">Name On Card</label>
+        <input name="nameOnCard" type="text" id="name-on-card" placeholder="Name on Card">
+        <div class="form-error" id="nameError">Please enter name on Card
+        </div>
+       
+      </div>
+
+      
+        <div>
+          <label for="month">Expire Month</label>
+          <input name="month" type="number" id="month" placeholder="Month">
+          <div class="form-error" id="monthError">Please enter expire month of card
+          </div>
+        </div>
+        
+        <div>
+          <label for="year">Expire Year</label>
+          <input name="year" type="number" id="year" placeholder="Year">
+          <div class="form-error" id="yearError">Please enter expire year of card
+          </div>
+        </div>
+      
+
+      <div>
+        <label for="code">Security Code</label>
+        <input name="code" type="number" id="code" placeholder="Security code">
+        <div class="form-error" id="codeError">Please enter card code
+        </div>
+      </div>
+
+      <button class="pay-now">Pay Now</button>
+
+
+      </div>
+    </div>
+  </form>
+</main>
+
+
+
+   <!--footer-->
+   <script src="../payment-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-bottom: 60px;
+  color: var(--font-color);
+  
+}
+
+:root{
+--font-color:white;
+--mobile-menu-font-size:16px;
+--mobile-version-font-weight:200;
+--button-tex-color:black;
+--border-radius:8px 8px 8px 8px;
+--display-flex: flex column;
+--text-align: center;
+--btn-brd-radius:5px 5px 5px 5px;
+--background-color:#484847;
+--transition-duration:0.3s;
+--background-color-for-submenu:rgba(0, 0, 0, 01);
+--padding-left-submenu:20px;
+--padding-top-submenu:20px;
+--btn-background-color: #E50914;
+}
+
+/*Header-style-start*/
+
+header{
+  margin-top: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../images/intense.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+
+/*main start here*/
+
+.main{
+  text-align: var(--text-align);
+  max-width: 800px;
+  margin: auto;
+  
+  padding: 20px;
+
+}
+.container {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 50px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+}
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-header p {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+.payment-logo img {
+  height: 40px;
+}
+
+#payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-container label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.payment-container select, 
+.payment-container input[type="number"], 
+.payment-container input[type="text"] {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.title{
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.duration,.price{
+  font-weight: 300;
+}
+.payment-methods,.basket{
+  font-weight: 300;
+}
+.payment-logo{
+ display: flex ;
+ flex-direction: row;
+ justify-content: center;
+ margin: 5px;
+}
+.pyament-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+payment-container select:focus, 
+.payment-container input[type="number"]:focus, 
+.payment-container input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/*payment main style*/
+
+
+
+.payment-container {
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  
+}
+.inputbox{
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+  margin: 5px 0px;
+  text-transform: none;
+  font-size: 15px;
+  
+}
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+
+}
+input [type=number]{
+  -moz-appearance: textfield;
+}
+
+/* .col{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 0px 0px 0px;
+} */
+.main-container{
+  margin: 30px auto ;
+  max-width:630px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+ 
+  background-color: #cedbd4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow:  0 0 12px #b7afaf;
+  margin: 30px;
+
+}
+form div{
+ margin: 20px 0;
+ width: 100%;
+}
+input{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #c9c9c9;
+  
+}
+
+label{
+ display: block;
+ font-size: 18px;
+ font-weight: bold;
+ margin-bottom: 10px;
+ color: #3e4241;
+  max-width: 600px;
+  display: block;
+  margin-top: 20px;
+}
+
+.form-error{
+  display: none;
+  color: red;
+  font-size: 16px;
+  margin-top:2px;
+}
+#successMessage{
+  font-weight: 600;
+  font-size: 20px;
+  display: none;
+  color: rgb(151, 255, 188);
+}
+.pay-now{
+  margin: auto;
+  text-decoration: none;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.pay-now:hover{
+  background-color: #333;
+}
+  
+
+
+/*footer-style*/
+
+
+/*media-screen-start-here*/
+
+@media screen and (min-width: 800px) {
+  
+  
+  header{
+  max-width: 1920px;
+  margin: auto;
+}
+.label-search-payment{
+  display: none;
+}
+.menu-footer{
+  display: none;
+}
+.logo-white{
+  display: block;
+}
+
+
+}
+
+  

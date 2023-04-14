@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+:root{
+--font-color:white;
+--background-color:#484847;
+--mobile-menu-font-size:16px;
+--mobile-version-font-weight:200;
+--button-tex-color:black;
+--border-radius:8px 8px 8px 8px;
+--display-flex: flex column;
+--text-align: center;
+--btn-brd-radius:5px 5px 5px 5px;
+--transition-duration:0.3s;
+--background-color-for-submenu:rgba(0, 0, 0, 01);
+--padding-left-submenu:20px;
+--padding-top-submenu:20px;
+}
+
+/*Header-style-start*/
+header{
+  margin-top: 10px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../images/intense.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+/*main start here*/
+.main{
+  text-align: var(--text-align);
+  max-width: 800px;
+  margin: auto;
+  background-color: var(--background-color);
+  padding: 20px;
+
+}
+.container{
+  text-align: var(--text-align);
+  color: var(--font-color);
+  margin: auto;
+  padding: 20px;
+  line-height: 0.7;
+}
+
+
+.vipss-logo, .visa-logo {
+  width: 80px;
+  height: 35px;
+}
+.title{
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+.duration,.price{
+  font-weight: 300;
+}
+.payment-methods{
+  font-weight: 300;
+}
+.payment-logo{
+
+ display: flex ;
+ flex-direction: row;
+ justify-content: center;
+
+}
+.add-to-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  margin: auto; 
+  background-color:  rgb(255, 0, 0);
+  width: 160px;
+  height: 40px;
+  border-radius: var(--btn-brd-radius);
+  transition-duration: var(--transition-duration);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.add-to-card:hover{
+  background-color: #333;
+}
+.add-to-card a{
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 20px;
+  font-weight: 600;
+  
+}
+
+
+
+/*footer-style*/
+.menu-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  margin: 0px 20px 20px 0px;
+  
+}
+.menu-footer a img{
+  width: 40px;
+  height: 40px;
+}
+
+/*media-screen-start-here*/
+@media screen and (min-width: 800px) {
+  
+ 
+  header{
+  max-width: 1920px;
+  margin: auto;
+}
+
+
+.menu-footer{
+  display: none;
+}
+.logo-white{
+  display: block;
+}
+
+
+
+}

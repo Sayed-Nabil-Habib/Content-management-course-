@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding-bottom: 40px;
@@ -54,13 +54,35 @@ header{
 .header-text h1{
   font-weight: 800;
 }
+.movie-images{
+  margin: 10px;
+}
+.filter-bar{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 600px;
+  background-color: antiquewhite;
+
+  
+}
+.filter{
+  margin: 10px;
+ 
+}
+#filter-options{
+  width: 120px;
+  height: 25px;
+}
+.movie-price, .movie-name{
+ color: white;
+ font-size: 16px;
+}
 
 .header-text p{
   font-weight: var(--mobile-version-font-weight);
 }
-label{
-  display: none;
-}
+
 .hero-btn{
   background-color: white;
   max-width: 90px;
@@ -171,7 +193,13 @@ label{
   display: block;
   max-width: 200px;
 }
-
+.movie-images{
+  margin: 10px;
+}
+.movie-price, .movie-name{
+ color: white;
+ font-size: 16px;
+}
 .menu-footer{
   display: none;
 }

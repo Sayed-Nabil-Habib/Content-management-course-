@@ -6,7 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const apiUrl = `http://localhost:10004/wp-json/wc/store/products/${id}`;
+const apiUrl = `http://www.sayed.codes/wp-json/wc/store/products/${id}`;
 
 async function fetchProductDetails() {
   try {

@@ -1,10 +1,10 @@
-const apiBase = "http://localhost:10004/";
+const apiBase = "http://www.sayed.codes/";
 const woocommercebase = "wp-json/wc/store/";
 const productBase = "products/";
 const pageBase = "wp-json/wp/v2/pages";
 const featured = "?featured=true";
 
-const featuredUrl = "http://localhost:10004/wp-json/wc/store/products/?featured=true";
+const featuredUrl = "http://www.sayed.codes/wp-json/wc/store/products/?featured=true";
 const fullPageUrl = apiBase + pageBase;
 const apiUrl = apiBase + woocommercebase + productBase;
 const apiUrlFeatured = apiUrl + featured;

@@ -37,6 +37,9 @@ async function getProducts(filterOption){
     
   if(filterOption === "All-Movies"){
 
+
+    
+
     resultContainer.innerHTML +=
 
     `<a href="./details.html?id=${data[i].id}" class="result">
@@ -53,7 +56,7 @@ async function getProducts(filterOption){
     <img class="movie-images" src="${data[i].images[0].src}" alt="${data[i].name}">
 
         <h1 class="movie-name"> ${data[i].name} </h1>
-        <h1 class="movie-price"> ${data[i].prices.price} </h1>
+        <h1 class="movie-price"> ${data[i].prices.price/100} NOK </h1>
         
     </a>`;
   }else if(filterOption === "Featured"){
@@ -61,7 +64,7 @@ async function getProducts(filterOption){
     `<a href="./details.html?id=${data[i].id}" class="result">
         <img class="movie-images" src="${data[i].images[0].src}" alt="${data[i].name}">
         <h1 class="movie-name"> ${data[i].name} </h1>
-        <h1 class="movie-price"> ${data[i].prices.price} </h1>
+        <h1 class="movie-price"> ${data[i].prices.price/100} NOK </h1>
         </a>`;
         
       }

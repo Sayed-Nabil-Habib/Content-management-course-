@@ -1,0 +1,83 @@
+/* Set the font family and color for the page */
+body {
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  background-color: #717070;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set the font size and line height for headings */
+h1, h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Style the movie title */
+h1 {
+  margin-bottom: 0.2em;
+}
+
+/* Style the movie details */
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+/* Style the movie poster */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the movie description */
+.description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+/* Style the "Play" button */
+.play-btn {
+  display: inline-block;
+  background-color: #e50914;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Add a hover effect to the "Play" button */
+.play-btn:hover {
+  background-color: #ff0f1f;
+}
+
+/* Add a media query to adjust the layout on smaller screens */
+@media (max-width: 768px) {
+  /* Set the font size for headings */
+  h1, h2 {
+      font-size: 2rem;
+  }
+  /* Set the font size for movie details */
+  p {
+      font-size: 1.4rem;
+  }
+  /* Set the font size for the movie description */
+  .description {
+      font-size: 1.6rem;
+  }
+  /* Set the font size for the "Play" button */
+  .play-btn {
+      font-size: 1.4rem;
+  }
+}

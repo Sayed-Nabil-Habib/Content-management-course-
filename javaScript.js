@@ -43,26 +43,26 @@ async function getProducts(filterOption){
     <img class="movie-images" src="${data[i].images[0].src}" alt="${data[i].name}">
 
         <h1 class="movie-name"> ${data[i].name} </h1>
-        <h1 class="movie-price"> ${data[i].prices.price} </h1>
+        <h1 class="movie-price"> ${data[i].prices.price/100} NOK </h1>
         
     </a>`;
   }else if(filterOption === "Horror" && data[i].id === 28){
     resultContainer.innerHTML +=
 
-  `<div class="result">
+  `<a href="./details.html?id=${data[i].id}" class="result">
     <img class="movie-images" src="${data[i].images[0].src}" alt="${data[i].name}">
 
         <h1 class="movie-name"> ${data[i].name} </h1>
         <h1 class="movie-price"> ${data[i].prices.price} </h1>
         
-    </div>`;
+    </a>`;
   }else if(filterOption === "Featured"){
     resultContainer.innerHTML +=
-    `<div class="result">
+    `<a href="./details.html?id=${data[i].id}" class="result">
         <img class="movie-images" src="${data[i].images[0].src}" alt="${data[i].name}">
         <h1 class="movie-name"> ${data[i].name} </h1>
         <h1 class="movie-price"> ${data[i].prices.price} </h1>
-        </div>`;
+        </a>`;
         
       }
     }

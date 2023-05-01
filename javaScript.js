@@ -1,4 +1,4 @@
-const apiBase = "http://www.sayed.codes/";
+const apiBase = "https://www.sayed.codes/";
 const woocommercebase = "wp-json/wc/store/";
 const productBase = "products/";
 const pageBase = "wp-json/wp/v2/pages";
